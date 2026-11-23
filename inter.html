@@ -1,0 +1,103 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternHub | Student Internship Portal</title>
+    <link rel="stylesheet" href="interstyle.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2>Intern<span>Hub.</span></h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#internships">Internships</a>
+            <a href="#applications">My Applications</a>
+        </div>
+
+        <a href="#internships" class="nav-btn">Explore Jobs</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">YOUR CAREER STARTS HERE</span>
+        <h1>Find Your Dream <span>Internship</span></h1>
+        <p>
+            Explore exciting internship opportunities, develop your skills
+            and take the first step towards your professional career.
+        </p>
+        <a href="#internships" class="primary-btn">Explore Internships →</a>
+    </div>
+</section>
+
+<section class="stats">
+    <div><h2>500+</h2><p>Opportunities</p></div>
+    <div><h2>200+</h2><p>Companies</p></div>
+    <div><h2>1000+</h2><p>Students</p></div>
+    <div><h2>50+</h2><p>Domains</p></div>
+</section>
+
+<section class="internship-section" id="internships">
+    <div class="section-heading">
+        <span class="tag">OPPORTUNITIES</span>
+        <h2>Explore Internships</h2>
+        <p>Find the right opportunity to build your future.</p>
+    </div>
+
+    <div class="filters">
+        <input type="text" id="searchInput"
+        placeholder="Search internship or company...">
+
+        <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Design">Design</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+    </div>
+
+    <div class="internship-grid" id="internshipList"></div>
+</section>
+
+<section class="applications" id="applications">
+    <div class="section-heading">
+        <span class="tag">YOUR PROGRESS</span>
+        <h2>My Applications</h2>
+        <p>Track the internships you have applied for.</p>
+    </div>
+
+    <div class="application-container">
+        <div class="application-header">
+            <span>Internship</span>
+            <span>Company</span>
+            <span>Status</span>
+        </div>
+
+        <div id="applicationList">
+            <p class="empty">No applications yet. Apply for an internship!</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h2>Intern<span>Hub.</span></h2>
+    <p>Connecting students with opportunities.</p>
+    <p class="copyright">© 2026 InternHub. All rights reserved.</p>
+</footer>
+
+<div class="modal" id="detailsModal">
+    <div class="modal-content">
+        <button class="close" id="closeModal">×</button>
+        <div id="modalDetails"></div>
+    </div>
+</div>
+
+<script src="interscript.js"></script>
+</body>
+</html>

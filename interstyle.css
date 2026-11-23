@@ -1,0 +1,420 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7f9fc;
+    color: #17233d;
+}
+
+header {
+    background: white;
+    box-shadow: 0 2px 12px #0000000c;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2, footer h2 {
+    font-size: 27px;
+    color: #17233d;
+}
+
+.navbar h2 span, footer h2 span {
+    color: #635bff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #526078;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #635bff;
+}
+
+.nav-btn, .primary-btn {
+    background: #635bff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.hero {
+    min-height: 450px;
+    background: linear-gradient(120deg, #e9eaff, #f4f5ff);
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #635bff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin: 18px 0;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #635bff;
+}
+
+.hero p {
+    color: #647089;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.stats {
+    max-width: 1000px;
+    margin: -35px auto 60px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px #0000000d;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 20px;
+    position: relative;
+}
+
+.stats h2 {
+    color: #635bff;
+    font-size: 29px;
+}
+
+.stats p {
+    color: #788398;
+    margin-top: 7px;
+}
+
+.internship-section, .applications {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 20px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: #788398;
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filters input, .filters select {
+    padding: 14px;
+    border: 1px solid #dce1ec;
+    border-radius: 8px;
+    background: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.filters input {
+    flex: 1;
+}
+
+.filters select {
+    width: 230px;
+}
+
+.internship-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.job-card {
+    background: white;
+    padding: 25px;
+    border-radius: 13px;
+    border: 1px solid #e9ecf3;
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #00000010;
+}
+
+.job-icon {
+    width: 48px;
+    height: 48px;
+    background: #efefff;
+    color: #635bff;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.job-card h3 {
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+
+.company {
+    color: #77839a;
+    font-size: 14px;
+}
+
+.job-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin: 20px 0;
+}
+
+.job-info span {
+    background: #f1f3f9;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #56627b;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card-buttons button {
+    flex: 1;
+    padding: 11px 8px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.details-btn {
+    background: #efefff;
+    color: #635bff;
+}
+
+.apply-btn {
+    background: #635bff;
+    color: white;
+}
+
+button:hover, .nav-btn:hover, .primary-btn:hover {
+    opacity: 0.85;
+}
+
+.application-container {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.application-header, .application-row {
+    min-width: 500px;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    gap: 15px;
+    padding: 16px;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.application-header {
+    font-weight: 700;
+    color: #635bff;
+}
+
+.application-row {
+    color: #526078;
+    font-size: 14px;
+    align-items: center;
+}
+
+.status {
+    background: #fff4d8;
+    color: #a16c00;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.empty {
+    text-align: center;
+    padding: 30px;
+    color: #8993a5;
+}
+
+footer {
+    background: #17233d;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #b8c1d1;
+    margin: 8px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #0009;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin: 15px 0;
+}
+
+.modal-content p {
+    line-height: 1.7;
+    color: #647089;
+    margin: 12px 0;
+}
+
+.modal-content .apply-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+@media(max-width: 850px) {
+    .internship-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats {
+        margin: 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 17px;
+        font-size: 13px;
+    }
+
+    .nav-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 65px 25px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .internship-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters select {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+}
